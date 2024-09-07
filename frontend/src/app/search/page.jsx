@@ -11,7 +11,7 @@ const Search = () => {
         return productData.map(product => (
             <Link
                 className="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md focus:outline-none focus:shadow-md transition dark:bg-neutral-900 dark:border-neutral-800"
-                href="#"
+                href={'/details/'+product.id}
             >
                 <div className="">
                     <img
@@ -31,10 +31,6 @@ const Search = () => {
 
                         ₹{product.price}
                     </h1>
-
-
-
-
 
                 </div>
             </Link>
